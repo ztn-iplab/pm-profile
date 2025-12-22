@@ -343,6 +343,28 @@ button {
   color: var(--coal);
 }
 
+.education-list {
+  display: grid;
+  gap: 16px;
+}
+
+.education-list article {
+  background: var(--fog);
+  padding: 20px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(35, 37, 38, 0.08);
+  box-shadow: 0 10px 30px rgba(35, 37, 38, 0.08);
+}
+
+.edu-degree {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.edu-meta {
+  color: rgba(35, 37, 38, 0.7);
+}
+
 .pub-title {
   font-weight: 600;
   margin-bottom: 6px;
