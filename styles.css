@@ -317,6 +317,32 @@ button {
   gap: 16px;
 }
 
+.publications .pub-year {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.publications .pub-year:first-of-type {
+  margin-top: 0;
+}
+
+.year-label {
+  font-family: var(--font-head);
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.pub-type h3 {
+  font-family: var(--font-head);
+  font-size: 20px;
+  color: var(--coal);
+}
+
 .pub-title {
   font-weight: 600;
   margin-bottom: 6px;
