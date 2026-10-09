@@ -4,7 +4,7 @@
    Palette: Sky, Sun & Hills, drawn from the Rwandan flag (sky blue, sun yellow,
    hill green), darkened where needed for text contrast. Yellow appears only on
    the dark green bands, where it passes AA.
-   Measured WCAG 2.2 contrast ratios (light mode; dark mode is AAA throughout):
+   Measured WCAG 2.2 contrast ratios (the site always uses this light palette):
      ink        #0f2633 on white     15.6:1  AAA
      muted      #3a5260 on white      8.2:1  AAA   (7.5:1 on --bg-alt)
      primary    #00527c on white      8.4:1  AAA   (links, primary buttons)
@@ -50,61 +50,8 @@
   --focus: #00527c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #08202b;
-    --bg-alt: #0c2a37;
-    --surface: #10323f;
-    --ink: #e6f1f6;
-    --muted: #b0c6d1;
-    --rule: #1f4352;
-    --rule-strong: #6a8e9c;
-    --primary: #6cc8f0;
-    --primary-hover: #9bdaf5;
-    --accent: #fad201;
-    --navy: #061a12;
-    --navy-2: #0d2a1d;
-    --on-navy: #ffffff;
-    --on-navy-soft: #cfe3d6;
-    --accent-bright: #fad201;
-    --mark-bg: #174a33;
-    --focus: #6cc8f0;
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #08202b;
-  --bg-alt: #0c2a37;
-  --surface: #10323f;
-  --ink: #e6f1f6;
-  --muted: #b0c6d1;
-  --rule: #1f4352;
-  --rule-strong: #6a8e9c;
-  --primary: #6cc8f0;
-  --primary-hover: #9bdaf5;
-  --accent: #fad201;
-  --navy: #061a12;
-  --navy-2: #0d2a1d;
-  --on-navy: #ffffff;
-  --on-navy-soft: #cfe3d6;
-  --accent-bright: #fad201;
-  --mark-bg: #174a33;
-  --focus: #6cc8f0;
-}
-
-
 :root {
   color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    color-scheme: dark;
-  }
-}
-
-:root[data-theme="dark"] {
-  color-scheme: dark;
 }
 
 /* ---------- base ---------- */
