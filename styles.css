@@ -852,15 +852,13 @@ b {
 .pub-year {
   font-family: var(--font-serif);
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.35rem;
   line-height: 1.15;
   color: var(--primary);
   font-variant-numeric: lining-nums tabular-nums;
 }
 
-.pub-group:first-of-type .pub-year {
-  font-size: 1.35rem;
-}
+
 
 .pub-list {
   display: grid;
@@ -935,12 +933,12 @@ b {
   margin-bottom: 8px;
 }
 
-.path li {
+.path > li {
   position: relative;
   padding: 20px 0 20px 30px;
 }
 
-.path li::before {
+.path > li::before {
   content: "";
   position: absolute;
   left: 5px;
@@ -950,7 +948,7 @@ b {
   background: var(--rule-strong);
 }
 
-.path li::after {
+.path > li::after {
   content: "";
   position: absolute;
   left: 0;
@@ -985,6 +983,75 @@ b {
   color: var(--muted);
   font-size: 1.0625rem;
   max-width: 36rem;
+}
+
+/* CV detail lists */
+
+.path-grid + .path-grid {
+  margin-top: clamp(48px, 6vw, 72px);
+}
+
+.points,
+.plain,
+.artifacts {
+  display: grid;
+  gap: 6px;
+}
+
+.points {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 1.0625rem;
+  max-width: 36rem;
+}
+
+.points li,
+.plain li,
+.artifacts li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.points li::before,
+.plain li::before,
+.artifacts li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.72em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.plain {
+  padding-top: 12px;
+}
+
+.side-blocks {
+  display: grid;
+  gap: clamp(32px, 4vw, 44px);
+  align-content: start;
+}
+
+.skills > div {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.skills dt {
+  font-weight: 700;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.skills dd {
+  line-height: 1.55;
+}
+
+.artifacts {
+  max-width: 48rem;
 }
 
 /* contact */
@@ -1198,7 +1265,7 @@ b {
   }
 
   .pub-year {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .path-grid {
